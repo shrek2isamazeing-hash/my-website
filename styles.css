@@ -1,0 +1,219 @@
+body{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+  font-family: "Pixeloid Mono", 'Courier New', Courier, monospace;
+  image-rendering: pixelated; 
+}
+
+/*for the moving arrows*/
+.adown {
+    width: 98px;
+    height: 41px;
+    background-image: url('adown.png');
+    background-size: cover;
+    transition: background-image 0.5s ease-in-out;
+    margin: 20px;
+    justify-self: center;
+}
+    .adown:hover {
+        background-image: url('adown.png');
+        margin-bottom: 5px;
+    }
+
+.aleft {
+    width: 41px;
+    height: 98px;
+    background-image: url('aleft.png');
+    background-size: cover;
+    transition: background-image 0.5s ease-in-out;
+    margin: 20px;
+    justify-self: left;
+}
+    .aleft:hover {
+        background-image: url('aleft.png');
+        margin-left: 5px;
+    }
+
+.aright {
+    width: 41px;
+    height: 98px;
+    background-image: url('aright.png');
+    background-size: cover;
+    transition: background-image 0.5s ease-in-out;
+    margin: 20px;
+    justify-self: right;
+}
+    .aright:hover {
+        background-image: url('aright.png');
+        margin-right: 5px;
+    }
+
+/*for first appearance of site (entering)*/
+#enter{
+    width: 1000px;
+    height: 563px;
+    background-image: url('1screena.jpg');
+    background-size: cover;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .door-hover {
+        width: 240px;
+        height: 505px;
+        background-image: url('1sdoorclose.jpg');
+        background-size: cover;
+        transition: background-image 0.5s ease-in-out;
+    }
+        .door-hover:hover {
+            background-image: url('1sdooropen.jpg');
+        }
+
+/*for last appearance of site (leaving)*/
+#exit{
+    width: 1000px;
+    height: 563px;
+    background-image: url('1exit.jpg');
+    background-size: cover;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    #exit>box1{
+        width: 250px;
+        height: 563px;
+        display: flex;
+        align-items: center;
+    }
+    #exit>box2{
+        width: 500px;
+        height: 563px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #exit>box2>a>.door-hover{
+        margin-bottom: 15px;
+    }
+    #exit>box3{
+        width: 250px;
+        height: 563px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+    .shrine-hover {
+        width:240px;
+        height: 16px;
+        background-color: lavenderblush;
+        transition: background-color 0.5s ease-in-out;
+    }
+        .shrine-hover:hover {
+            background-color:lavender
+        }
+
+/*for first part of room (desk, calender)*/
+#room1{
+    width: 1000px;
+    height: 563px;
+    background-image: url('2screen.jpg');
+    background-size: cover;
+    margin: 10px;
+    display: flex;
+}
+    #room1>box1{
+        width: 285px;
+        height:inherit;
+        display: flex;
+        align-items: center;
+    }
+    #room1>box2{
+        width: 330px;
+        height:inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #room1>box3{
+        width: 385px;
+        height:inherit;
+    }
+        .desk-hover {
+        width: 385px;
+        height: 468px;
+        background-image: url('2deskclose.jpg');
+        background-size: cover;
+        transition: background-image 0.5s ease-in-out;
+        margin-top: 95px;
+        }
+            .desk-hover:hover {
+            background-image: url('2deskopen.jpg');
+            }
+        .calender-hover {
+        width: 328px;
+        height: 256px;
+        background-image: url('2scalenderclose.jpg');
+        background-size: cover;
+        transition: background-image 0.5s ease-in-out;
+        margin-top: 18px;
+        }
+            .calender-hover:hover {
+            background-image: url('2scalenderopen.png');
+            }
+
+/*for second part of room (art, closet, college boxes)*/
+#room2{
+    width: 1000px;
+    height: 563px;
+    background-image: url('3screen.jpg');
+    background-size: cover;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#room2>row{
+    width:311.5px;
+    height:700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+    .art-hover {
+    width: 370px;
+    height: 214px;
+    background-image: url('3sartclose.jpg');
+    background-size: cover;
+    transition: background-image 0.5s ease-in-out;
+    }
+        .art-hover:hover {
+        background-image: url('3sartopen.jpg');
+        }
+    .box-hover {
+    width: 229px;
+    height: 308px;
+    background-image: url('3sboxclose.jpg');
+    background-size: cover;
+    transition: background-image 0.5s ease-in-out;
+    }
+        .box-hover:hover {
+        background-image: url('3sboxopen.jpg');
+        }
+    .closet-hover {
+    width: 224px;
+    height: 563px;
+    background-image: url('3sdoorclose.jpg');
+    background-size: cover;
+    transition: background-image 0.5s ease-in-out;
+    margin-right: 15px;
+    }
+        .closet-hover:hover {
+        background-image: url('3sdooropen.jpg');
+        }
